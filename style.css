@@ -88,17 +88,24 @@ body {
     transform: scale(0);
     animation: scaleCricle 2s 16s forwards ease-in-out;
 }
-#btn__letter{
+
+#btn__letter {
     position: relative;
-    margin-top: 30px;
+    
+    
+}
+.btn {
     background-color: var(--color-text-pink);
     outline: none;
+     margin: 10px auto;
+    display: block;
     padding: 5px 15px;
+
     font-size: 1rem;
     border-radius: 50px;
     border: 3px solid var(--color-black);
     font-family: "Sriracha", cursive;
-    display: flex;
+
     align-items: center;
     justify-content: center;
     cursor: pointer;
@@ -106,21 +113,69 @@ body {
     transform: scale(1);
     transition: all .5s ease-in-out;
 }
-#btn__letter:active{
+
+.btnclass{
+    height: 100vh; /* full viewport height */
+    margin: 0;
+    display: flex;
+    justify-content: center; /* center horizontally */
+    align-items: center;     /* center vertically */
+}
+
+
+.btn:active{
     transform: scale(0.7);
 }
-#btn__letter i{
+.btn i{
     margin-left: 5px;
 }
-#btn__letter:hover{
+.btn:hover{
     border-color: var(--color-heart);
     background-color: var(--color-heart);
     color: #fff;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
-#btn__letter:hover i{
+.btn:hover i{
     animation: rotateHeart 1s infinite linear;
 }
+
+.btnclass {
+  height: 100vh;
+  display: flex;
+  justify-content: center;  /* center horizontally */
+  align-items: center;      /* center vertically */
+}
+
+.btn-wrapper {
+  text-align: center;
+}
+
+.btn-wrapper p {
+  font-family: "Sriracha", cursive;
+  font-size: 1.5rem;
+  color: var(--color-black);
+  margin-bottom: 20px;
+}
+
+.btn {
+  display: block;        /* force each button onto its own line */
+  margin: 10px auto;
+  padding: 8px 20px;
+  border-radius: 50px;
+  background-color: var(--color-text-pink);
+  color: white;
+  font-family: "Sriracha", cursive;
+  border: 3px solid var(--color-black);
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn:hover {
+  background-color: var(--color-heart);
+  border-color: var(--color-heart);
+  transform: scale(1.05);
+}
+
 @keyframes rotateHeart{
     0%,50%, 100%{
         transform: rotate(0deg);
@@ -728,7 +783,7 @@ body {
         letter-spacing: 8px;
     }
 
-    #btn__letter {
+    .btn {
         margin-top: 17px;
         width: 209px;
         padding: 6px 4px;
