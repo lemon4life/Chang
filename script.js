@@ -31,9 +31,6 @@ setTimeout(function () {
 
 var intervalContent;
 var intervalTitle;
-$("#btn__letter").on("click", function () {
-    music.play();
-});
 
 let mailBox = document.querySelector('.mail')
 let boxmail = document.querySelector('.boxMail')
